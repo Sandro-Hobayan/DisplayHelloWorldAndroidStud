@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
-    Button act2, act3, act4, act5, act6, act7, act8, act9, act10;
+   private Button act2, act3, act4, act5, act6, act7, act8, act9, act10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,19 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        act2 = findViewById(R.id/btn_act2);
+        textView = findViewById(R.id.tv_hello);
+        act2 = findViewById(R.id.btn_act2);
+        act3 = findViewById(R.id.btn_act3);
+        act4 = findViewById(R.id.btn_act4);
+        act5 = findViewById(R.id.btn_act5);
+        act6 = findViewById(R.id.btn_act6);
+        act7 = findViewById(R.id.btn_act7);
+        act8 = findViewById(R.id.btn_act8);
+        act9 = findViewById(R.id.btn_act9);
+        act10 = findViewById(R.id.btn_act10);
+
+        MainActivity main = new MainActivity();
+
 
     }
 }
