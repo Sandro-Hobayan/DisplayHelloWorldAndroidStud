@@ -1,24 +1,41 @@
 package com.example.displayhelloworldactivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Activity3 extends AppCompatActivity {
+
+    TextView output;
+    EditText input;
+    Button submit, clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_3);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        output = findViewById(R.id.tv_3output);
+        input = findViewById(R.id.et_3input);
+        submit = findViewById(R.id.btn_3submit);
+        clear = findViewById(R.id.btn_3clear);
+
+
+
+        submit.setOnClickListener(v ->{
+            String inputValue;
+            inputValue = input.getText().toString();
+            output.setText("Hello " + inputValue + "!");
         });
+
+        clear.setOnClickListener(v ->{
+            output.setText("");
+        });
+
     }
 }
