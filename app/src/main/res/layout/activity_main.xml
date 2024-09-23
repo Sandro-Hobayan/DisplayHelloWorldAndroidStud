@@ -10,9 +10,10 @@
     >
 
     <TextView
+        android:id="@+id/tv_hello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,18 +33,21 @@
             >
 
             <Button
+                android:id="@+id/btn_act2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 2"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 3"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 4"
@@ -59,18 +63,21 @@
             >
 
             <Button
+                android:id="@+id/btn_act5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 5"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 6"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 7"
@@ -86,18 +93,21 @@
             >
 
             <Button
+                android:id="@+id/btn_act8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 8"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 9"
                 android:layout_margin="20dp"
                 />
             <Button
+                android:id="@+id/btn_act10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="act 10"
