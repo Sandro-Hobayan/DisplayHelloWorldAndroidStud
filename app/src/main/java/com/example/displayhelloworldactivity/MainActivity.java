@@ -1,5 +1,6 @@
 package com.example.displayhelloworldactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
-   private Button act2, act3, act4, act5, act6, act7, act8, act9, act10;
+    Button act2, act3, act4, act5, act6, act7, act8, act9, act10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
         act9 = findViewById(R.id.btn_act9);
         act10 = findViewById(R.id.btn_act10);
 
-        MainActivity main = new MainActivity();
+        act2.setOnClickListener(view -> {
+           Intent intent = new Intent(MainActivity.this, Activity2.class);
+           startActivity(intent);
+        });
+
 
 
     }
