@@ -30,9 +30,53 @@ public class MainActivity extends AppCompatActivity {
         act9 = findViewById(R.id.btn_act9);
         act10 = findViewById(R.id.btn_act10);
 
-        act2.setOnClickListener(view -> {
-           Intent intent = new Intent(MainActivity.this, Activity2.class);
-           startActivity(intent);
+        String hello = "Hello World!";
+        textView.setText(hello);
+
+        act2.setOnClickListener(v -> {
+           Intent act2 = new Intent(MainActivity.this, Activity2.class);
+           startActivity(act2);
+        });
+
+        act3.setOnClickListener(v ->{
+            Intent act3 = new Intent(MainActivity.this, Activity3.class);
+            startActivity(act3);
+        });
+
+        act4.setOnClickListener(v ->{
+            Intent act4 = new Intent(MainActivity.this, Activity4.class);
+            startActivity(act4);
+            startActivity(act4);
+        });
+
+        act5.setOnClickListener(v ->{
+            Intent act5 = new Intent(MainActivity.this, Activity5.class);
+            startActivity(act5);
+        });
+
+        act6.setOnClickListener(v ->{
+            Intent act6 = new Intent(MainActivity.this, Activity6.class);
+            startActivity(act6);
+        });
+
+        act7.setOnClickListener(v ->{
+            Intent act7 = new Intent(MainActivity.this, Activity7.class);
+            startActivity(act7);
+        });
+
+        act8.setOnClickListener(v ->{
+            Intent act8 = new Intent(MainActivity.this, Activity8.class);
+            startActivity(act8);
+        });
+
+        act9.setOnClickListener(v ->{
+            Intent act9 = new Intent(MainActivity.this, Activity9.class);
+            startActivity(act9);
+        });
+
+        act10.setOnClickListener(v ->{
+            Intent act10 = new Intent(MainActivity.this, Activity10.class);
+            startActivity(act10);
         });
 
 
