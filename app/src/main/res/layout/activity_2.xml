@@ -27,6 +27,16 @@
         android:textSize="50sp"
         />
 
+    <Button
+        android:id="@+id/btn_Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click me!"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="40dp"
+        />
 
 
 
