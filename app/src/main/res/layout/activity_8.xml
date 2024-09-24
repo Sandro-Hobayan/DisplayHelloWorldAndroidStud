@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity8">
+    tools:context=".Activity8"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odd, Even Checker Activity"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_8output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginVertical="30dp"
+        />
+
+    <EditText
+        android:id="@+id/et_8input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a number"
+        android:paddingHorizontal="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/btn_8submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginVertical="20dp"
+        />
+
+</LinearLayout>
