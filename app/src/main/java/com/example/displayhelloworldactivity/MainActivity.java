@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
-    Button act2, act3, act4, act5, act6, act7, act8, act9, act10;
+    Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, wordReverser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         act8 = findViewById(R.id.btn_act8);
         act9 = findViewById(R.id.btn_act9);
         act10 = findViewById(R.id.btn_act10);
+        textLength = findViewById(R.id.btn_textlength);
 
         String hello = "Hello World!";
         textView.setText(hello);
@@ -79,7 +80,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(act10);
         });
 
-
+        textLength.setOnClickListener(v ->{
+            Intent textlength = new Intent(MainActivity.this, textLength.class);
+            startActivity(textlength);
+        });
 
     }
 }
