@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
-    Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, currencyConverter;
+    Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, currencyConverter, wordReverser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         act10 = findViewById(R.id.btn_act10);
         textLength = findViewById(R.id.btn_textlength);
         currencyConverter = findViewById(R.id.btn_currencyConverter);
+        wordReverser = findViewById(R.id.btn_wordReverser);
 
         String hello = "Hello World!";
         textView.setText(hello);
@@ -89,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
         currencyConverter.setOnClickListener(v ->{
             Intent currencyConverter = new Intent(MainActivity.this, currencyConverter.class);
             startActivity(currencyConverter);
+        });
+
+        wordReverser.setOnClickListener(v ->{
+            Intent wordReverser = new Intent(MainActivity.this, wordReverser.class);
+            startActivity(wordReverser);
         });
 
     }

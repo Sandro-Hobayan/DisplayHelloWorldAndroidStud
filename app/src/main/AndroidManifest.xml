@@ -13,13 +13,13 @@
         android:theme="@style/Theme.DisplayHelloWorldActivity"
         tools:targetApi="31">
         <activity
+            android:name=".wordReverser"
+            android:exported="false" />
+        <activity
             android:name=".currencyConverter"
             android:exported="false" />
         <activity
             android:name=".textLength"
-            android:exported="false" />
-        <activity
-            android:name=".wordReverser"
             android:exported="false" />
         <activity
             android:name=".textReverse"
