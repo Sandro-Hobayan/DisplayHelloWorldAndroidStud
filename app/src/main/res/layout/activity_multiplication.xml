@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".multiplication"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_multiplicationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number:"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_multiplicationSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_multiplication10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

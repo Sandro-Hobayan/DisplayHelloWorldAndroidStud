@@ -132,6 +132,33 @@
             />
 
     </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            />
+        <Button
+            android:id="@+id/btn_simpleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            />
+        <Button
+            android:id="@+id/btn_fahrenheittocelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fahrenheitToCelsius"
+            />
+
+    </LinearLayout>
 
 
 </LinearLayout>
