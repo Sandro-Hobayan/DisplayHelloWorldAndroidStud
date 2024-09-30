@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookMarkList"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Mark List"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_bookMarkListInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g (w3school.com)"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_bookMarkListSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_bookMarkListOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        />
+
+</LinearLayout>

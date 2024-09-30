@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DisplayHelloWorldActivity"
         tools:targetApi="31">
         <activity
+            android:name=".bookMarkList"
+            android:exported="false" />
+        <activity
             android:name=".FahrenheitToCelsius"
             android:exported="false" />
         <activity
