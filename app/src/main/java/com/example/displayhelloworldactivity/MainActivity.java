@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView textView;
     Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, currencyConverter,
-            wordReverser, multiplication, login, fahrenheitToCelcius, bookMarkList;
+            wordReverser, multiplication, login, fahrenheitToCelcius, bookMarkList, shoppingList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.btn_simpleLogin);
         fahrenheitToCelcius = findViewById(R.id.btn_fahrenheittocelsius);
         bookMarkList = findViewById(R.id.btn_bookMarkList);
+        shoppingList = findViewById(R.id.btn_shoppingList);
 
         String hello = "Hello World!";
         textView.setText(hello);
@@ -120,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
         bookMarkList.setOnClickListener(v->{
             Intent bookMarkList = new Intent(MainActivity.this, bookMarkList.class);
             startActivity(bookMarkList);
+        });
+
+        shoppingList.setOnClickListener(v->{
+            Intent shopping = new Intent(MainActivity.this, shoppingList.class);
+            startActivity(shopping);
         });
 
     }
