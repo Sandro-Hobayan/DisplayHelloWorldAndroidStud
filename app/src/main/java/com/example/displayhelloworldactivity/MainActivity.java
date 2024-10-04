@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, currencyConverter,
             wordReverser, multiplication, login, fahrenheitToCelcius, bookMarkList, shoppingList,
-            todoManager;
+            todoManager, guessNumGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bookMarkList = findViewById(R.id.btn_bookMarkList);
         shoppingList = findViewById(R.id.btn_shoppingList);
         todoManager = findViewById(R.id.btn_toDoManager);
+        guessNumGame = findViewById(R.id.btn_guessNum);
 
         String hello = "Hello World!";
         textView.setText(hello);
@@ -133,6 +134,11 @@ public class MainActivity extends AppCompatActivity {
         todoManager.setOnClickListener(v->{
             Intent todo = new Intent(MainActivity.this, toDoManager.class);
             startActivity(todo);
+        });
+
+        guessNumGame.setOnClickListener(v->{
+            Intent guessNum = new Intent(MainActivity.this, guessTheNumberGame.class);
+            startActivity(guessNum);
         });
 
     }
