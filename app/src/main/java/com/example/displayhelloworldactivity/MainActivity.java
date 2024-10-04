@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button act2, act3, act4, act5, act6, act7, act8, act9, act10, textLength, currencyConverter,
             wordReverser, multiplication, login, fahrenheitToCelcius, bookMarkList, shoppingList,
-            todoManager, guessNumGame;
+            todoManager, guessNumGame, randomNumGenerator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         shoppingList = findViewById(R.id.btn_shoppingList);
         todoManager = findViewById(R.id.btn_toDoManager);
         guessNumGame = findViewById(R.id.btn_guessNum);
+        randomNumGenerator = findViewById(R.id.btn_randomNumberGenerator);
 
         String hello = "Hello World!";
         textView.setText(hello);
@@ -139,6 +140,11 @@ public class MainActivity extends AppCompatActivity {
         guessNumGame.setOnClickListener(v->{
             Intent guessNum = new Intent(MainActivity.this, guessTheNumberGame.class);
             startActivity(guessNum);
+        });
+
+        randomNumGenerator.setOnClickListener(v->{
+            Intent randomNumGen = new Intent(MainActivity.this, randomNumberGenerator.class);
+            startActivity(randomNumGen);
         });
 
     }
